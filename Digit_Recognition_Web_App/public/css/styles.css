@@ -152,6 +152,11 @@ body{
 .social-media-icons {
   margin: 10px 40px;
 }
+.dataset {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
 
 .source-column {
   padding: 3% 2%;
