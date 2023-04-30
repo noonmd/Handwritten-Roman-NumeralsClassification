@@ -1,0 +1,201 @@
+body{
+  background: linear-gradient(#FDE2F3,#917FB3) fixed;
+}
+#sketchpadapp {
+  /* Prevent nearby text being highlighted when accidentally dragging mouse outside confines of the canvas */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#clear_button {
+  margin-right: 15px;
+  color: #917FB3;
+  font-weight: 400;
+  font-family: 'Kanit', sans-serif;
+}
+
+#confidence {
+  font-family: 'Kanit', sans-serif;
+  margin-top: 7.5%;
+  color: #2A2F4F;
+}
+
+#content {
+  margin: 0 auto;
+  padding: 2% 15%;
+  padding-bottom: 0;
+}
+
+.welcome {
+  text-align: center;
+  position: relative;
+  color: #E5BEEC;
+  background-color: #2A2F4F;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-weight: 700;
+  font-family: 'Kanit', sans-serif;
+}
+
+#footer {
+  /* text-align: center;
+  background-color: #292b2c;
+  color: #fff;
+  padding-bottom: 0%;
+  position: relative; */
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #292b2c;
+  color: white;
+  text-align: center;
+}
+
+#predict_button {
+  margin-right: 15px;
+  color: #917FB3;
+  font-weight: 400;
+  font-family: 'Kanit', sans-serif;
+}
+
+#prediction_heading {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 700;
+  margin-top: 7.5%;
+  color: #2A2F4F;
+}
+
+#result {
+  font-family: 'Kanit', sans-serif;
+  font-size: 5rem;
+  color: #2A2F4F;
+}
+
+#sketchpad {
+  /* float:left; */
+  height: 250px;
+  width: 250px;
+  border: 2px solid #888;
+  border-radius: 4px;
+  /* position:relative; /* Necessary for correct mouse co-ords in Firefox */
+}
+
+#source {
+  padding: 0 100px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#title {
+  padding: 1.5% 15%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  font-size: 15px;
+  padding: 10px;
+  -webkit-appearance: none;
+  background: #eee;
+  border: 1px solid #888;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttons_div {
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  display: inline;
+  color: #2A2F4F;
+}
+.heading2 {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  display: inline;
+  color: #2A2F4F;
+}
+
+.leftside {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4%;
+  /* padding-left: 10%; */
+}
+
+.predicted_answer {
+  text-align: center;
+  margin: 0 auto;
+  padding: 3% 5%;
+  padding-top: 0;
+  /* padding-left: 10%; */
+}
+
+.responsive_img {
+  width: 75%;
+  height: 10vw;
+  object-fit: cover;
+}
+
+.social-media-icons {
+  margin: 10px 40px;
+}
+
+.source-column {
+  padding: 3% 2%;
+}
+
+.source-h2 {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+}
+
+hr {
+  border: dotted #808080 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+  margin-bottom: 100px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+p {
+  font-family: "Source Code Pro", monospace, sans-serif;
+  margin-top: 1%;
+}
+
+@media (min-width: 720px) {
+  .leftside {
+    padding-left: 10%;
+  }
+}
