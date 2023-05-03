@@ -149,9 +149,6 @@ var base_url = window.location.origin;
 let model;
 (async function () {
   console.log("model loading...");
-  // model = await tf.loadLayersModel(
-  //   "https://maneprajakta.github.io/Digit_Recognition_Web_App/models/model.json"
-  // );
   model = await tf.loadLayersModel(
     "https://raw.githubusercontent.com/Natthaphon-Sangmuang/roman_number_models/main/model.json"
   );
@@ -175,7 +172,7 @@ function preprocessCanvas(image) {
   //The tensor.div() function is used to divide the array or tensor by the maximum RGB value(255)
   let tensor = tf.browser
     .fromPixels(image)
-    .resizeNearestNeighbor([32, 32])
+    .resizeNearestNeighbor([28, 28])
     .mean(2)
     .expandDims(2)
     .expandDims()
@@ -195,9 +192,9 @@ document
   .addEventListener("click", async function () {
     var imageData = canvas.toDataURL();
     let tensor = preprocessCanvas(canvas);
-    // console.log(tensor);
+    console.log(tensor);
     let predictions = await model.predict(tensor).data();
-    // console.log(predictions);
+    console.log(predictions);
     let results = Array.from(predictions);
     displayLabel(results);
     console.log(results);
